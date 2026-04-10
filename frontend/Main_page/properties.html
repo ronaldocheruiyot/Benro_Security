@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Properties - BENRO REAL ESTATE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  	<div class="wrap">
+		</div>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">BENRO <span>REAL ESTATE</span></a>
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="services.html">Services</a>
+                <a class="dropdown-item" href="property-details.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>
+	          <li class="nav-item active"><a href="product.html" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+	            <div class="dropdown-menu" aria-labelledby="loginDropdown">
+	              <a class="dropdown-item" href="#">Tenants</a>
+	              <a class="dropdown-item" href="#">Management</a>
+	            </div>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/luke-van-zyl-koH7IVuwRLw-unsplash.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Properties <i class="fa fa-chevron-right"></i></span></p>
+            <h2 class="mb-0 bread">Available Properties</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+			<div class="container">
+				<!-- Property Search Filter -->
+				<div class="property-filter-section mb-5">
+					<div class="filter-container">
+						<form id="propertyFilterForm">
+							<div class="row">
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control filter-input" id="filterKeywords" placeholder="Keywords">
+								</div>
+								<div class="col-md-2 mb-3">
+									<select class="form-control filter-input" id="filterPurpose">
+										<option value="">Rent</option>
+										<option value="rent">For Rent</option>
+										<option value="sale">For Sale</option>
+									</select>
+								</div>
+								<div class="col-md-2 mb-3">
+									<select class="form-control filter-input" id="filterType">
+										<option value="">Residential</option>
+										<option value="residential">Residential</option>
+										<option value="commercial">Commercial</option>
+										<option value="land">Land</option>
+									</select>
+								</div>
+								<div class="col-md-2 mb-3">
+									<select class="form-control filter-input" id="filterStatus">
+										<option value="">-- Status --</option>
+										<option value="available">Available</option>
+										<option value="sold">Sold</option>
+										<option value="pending">Pending</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-3">
+									<input type="text" class="form-control filter-input" id="filterAddress" placeholder="Address">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 mb-3">
+									<input type="number" class="form-control filter-input" id="filterBedrooms" placeholder="Bedrooms" min="0">
+								</div>
+								<div class="col-md-2 mb-3">
+									<input type="number" class="form-control filter-input" id="filterBathrooms" placeholder="Bathrooms" min="0">
+								</div>
+								<div class="col-md-3 mb-3">
+									<button type="button" class="btn btn-outline-secondary btn-block" id="moreFiltersBtn">More Filters</button>
+								</div>
+								<div class="col-md-5 mb-3">
+									<button type="submit" class="btn btn-primary btn-block btn-search-properties">SEARCH</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row mb-4">
+							<div class="col-md-12">
+								<h4 class="property-results-title">Available Properties</h4>
+							</div>
+						</div>
+						<div class="row">
+							<!-- Property 1 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg);">
+										<span class="property-badge sale-badge">Sale</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Residential</span>
+										<h3 class="property-title"><a href="property-details.html">Modern Family House</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
+										<div class="property-features">
+											<span><i class="fa fa-bed"></i> 4 Beds</span>
+											<span><i class="fa fa-bath"></i> 3 Baths</span>
+											<span><i class="fa fa-square-o"></i> 2500 sqft</span>
+										</div>
+										<p class="property-price">$250,000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Property 2 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/pexels-simay-secgin-1072616580-33647081.jpg);">
+										<span class="property-badge rent-badge">Rent</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Residential</span>
+										<h3 class="property-title"><a href="property-details.html">Luxury Apartment</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Westlands, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-bed"></i> 3 Beds</span>
+											<span><i class="fa fa-bath"></i> 2 Baths</span>
+											<span><i class="fa fa-square-o"></i> 1800 sqft</span>
+										</div>
+										<p class="property-price">$1,200 / month</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 3 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/pexels-thgusstavo-2102587.jpg);">
+										<span class="property-badge rent-badge">Rent</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Commercial</span>
+										<h3 class="property-title"><a href="property-details.html">Commercial Office Space</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Kilimani, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-building"></i> Office</span>
+											<span><i class="fa fa-bath"></i> 2 Baths</span>
+											<span><i class="fa fa-square-o"></i> 3000 sqft</span>
+										</div>
+										<p class="property-price">$1,500 / month</p>
+									</div>
+								</div>
+							</div>
+							<!-- Property 4 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/pexels-alex-staudinger-829197-1732414.jpg);">
+										<span class="property-badge sale-badge">Sale</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Land</span>
+										<h3 class="property-title"><a href="property-details.html">Land for Sale</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Kiambu, Kenya</p>
+										<div class="property-features">
+											<span><i class="fa fa-map"></i> 1 Acre</span>
+											<span><i class="fa fa-tree"></i> Fenced</span>
+											<span><i class="fa fa-road"></i> Access</span>
+										</div>
+										<p class="property-price">$35,000</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 5 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg);">
+										<span class="property-badge sale-badge">Sale</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Residential</span>
+										<h3 class="property-title"><a href="property-details.html">Beautiful Villa</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Karen, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-bed"></i> 5 Beds</span>
+											<span><i class="fa fa-bath"></i> 4 Baths</span>
+											<span><i class="fa fa-square-o"></i> 3500 sqft</span>
+										</div>
+										<p class="property-price">$450,000</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 6 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/front-view-woman-holding-keys-her-new-home.jpg);">
+										<span class="property-badge rent-badge">Rent</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Residential</span>
+										<h3 class="property-title"><a href="property-details.html">Cozy Apartment</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Parklands, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-bed"></i> 2 Beds</span>
+											<span><i class="fa fa-bath"></i> 1 Bath</span>
+											<span><i class="fa fa-square-o"></i> 1200 sqft</span>
+										</div>
+										<p class="property-price">$800 / month</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 7 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/kane-taylor-02fRawxKwbA-unsplash.jpg);">
+										<span class="property-badge sale-badge">Sale</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Residential</span>
+										<h3 class="property-title"><a href="property-details.html">Townhouse</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Lavington, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-bed"></i> 3 Beds</span>
+											<span><i class="fa fa-bath"></i> 2 Baths</span>
+											<span><i class="fa fa-square-o"></i> 2000 sqft</span>
+										</div>
+										<p class="property-price">$180,000</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 8 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/bernard-hermant-g9ydDMdpfM0-unsplash.jpg);">
+										<span class="property-badge rent-badge">Rent</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Commercial</span>
+										<h3 class="property-title"><a href="property-details.html">Retail Space</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> CBD, Nairobi</p>
+										<div class="property-features">
+											<span><i class="fa fa-building"></i> Ground Floor</span>
+											<span><i class="fa fa-bath"></i> 1 Bath</span>
+											<span><i class="fa fa-square-o"></i> 1500 sqft</span>
+										</div>
+										<p class="property-price">$2,000 / month</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Property 9 -->
+							<div class="col-md-4 d-flex">
+								<div class="property-card ftco-animate">
+									<div class="property-img" style="background-image: url(images/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg);">
+										<span class="property-badge sale-badge">Sale</span>
+										<div class="property-overlay">
+											<a href="property-details.html" class="btn btn-primary">View Details</a>
+										</div>
+									</div>
+									<div class="property-details">
+										<span class="property-type">Commercial</span>
+										<h3 class="property-title"><a href="property-details.html">Commercial Building</a></h3>
+										<p class="property-location"><i class="fa fa-map-marker"></i> Mombasa Road</p>
+										<div class="property-features">
+											<span><i class="fa fa-building"></i> 3 Floors</span>
+											<span><i class="fa fa-car"></i> Parking</span>
+											<span><i class="fa fa-square-o"></i> 8000 sqft</span>
+										</div>
+										<p class="property-price">$680,000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-5">
+			          <div class="col text-center">
+			            <div class="block-27">
+			              <ul>
+			                <li><a href="#">&lt;</a></li>
+			                <li class="active"><span>1</span></li>
+			                <li><a href="#">2</a></li>
+			                <li><a href="#">3</a></li>
+			                <li><a href="#">&gt;</a></li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+					</div>
+				</div>
+			</div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Apr. 18, 2020</a></div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Apr. 18, 2020</a></div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Benro <span>RealEstate</span></a></h2>
+              <p>Your trusted partner in property sales, rentals, and investments across Kenya.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">My Accounts</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quick Link</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+      	<div class="container">
+      		<div class="row">
+	          <div class="col-md-12">
+		
+	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Property Filter Script -->
+  <script>
+    $(document).ready(function() {
+      // Handle property filter form submission
+      $('#propertyFilterForm').on('submit', function(e) {
+        e.preventDefault();
+        
+        var keywords = $('#filterKeywords').val();
+        var purpose = $('#filterPurpose').val();
+        var type = $('#filterType').val();
+        var status = $('#filterStatus').val();
+        var address = $('#filterAddress').val();
+        var bedrooms = $('#filterBedrooms').val();
+        var bathrooms = $('#filterBathrooms').val();
+        
+        console.log('Property Filter:', {
+          keywords: keywords,
+          purpose: purpose,
+          type: type,
+          status: status,
+          address: address,
+          bedrooms: bedrooms,
+          bathrooms: bathrooms
+        });
+        
+        // For now, show alert - later you can implement actual filtering
+        alert('Property search will be implemented with your backend.\n\nSearch criteria captured successfully!');
+        
+        // You can implement filtering logic here or redirect with query params
+        // Example: window.location.href = 'product.html?purpose=' + purpose + '&type=' + type + '...';
+      });
+
+      // More Filters button
+      $('#moreFiltersBtn').on('click', function() {
+        alert('Additional filters (price range, amenities, etc.) will be added here.');
+      });
+
+      // Add click event for property cards
+      $('.property-card').on('click', function(e) {
+        // If the click is not on the button, redirect to details page
+        if (!$(e.target).closest('.btn-primary').length) {
+          window.location.href = 'property-details.html';
+        }
+      });
+    });
+  </script>
+    
+  </body>
+</html>
+
+
+

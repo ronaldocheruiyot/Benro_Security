@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Property Details - BENRO REAL ESTATE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  	<div class="wrap">
+		</div>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Benro <span>RealEstate</span></a>
+
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item active"><a href="properties.html" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/luke-van-zyl-koH7IVuwRLw-unsplash.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span><a href="properties.html">Properties <i class="fa fa-chevron-right"></i></a></span> <span>Property Details <i class="fa fa-chevron-right"></i></span></p>
+            <h2 class="mb-0 bread">Property Details</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 mb-5">
+    				<!-- Main Image Gallery with Navigation -->
+    				<div class="property-gallery ftco-animate" style="position: relative; background: #f8f9fa; border-radius: 10px; overflow: hidden;">
+    					<!-- Main Image -->
+    					<div style="position: relative; height: 500px; background-size: cover; background-position: center;" id="mainPropertyImageContainer">
+    						<img id="mainPropertyImage" src="images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Property">
+    						
+    						<!-- Previous Button -->
+					<button type="button" class="gallery-nav-btn prev-btn" onclick="previousImage(); return false;" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: rgba(183, 71, 42, 0.9); color: white; border: 2px solid white; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 24px; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 20;"><i class="fa fa-chevron-left"></i></button>
+					
+					<!-- Next Button -->
+					<button type="button" class="gallery-nav-btn next-btn" onclick="nextImage(); return false;" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: rgba(183, 71, 42, 0.9); color: white; border: 2px solid white; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 24px; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 20;"><i class="fa fa-chevron-right"></i></button>
+    						<!-- Image Counter -->
+    						<div style="position: absolute; top: 15px; right: 15px; background: rgba(0, 0, 0, 0.7); color: white; padding: 8px 15px; border-radius: 5px; font-size: 14px; font-weight: 600;">
+    							<span id="imageCounter">1</span> / <span id="totalImages">8</span>
+    						</div>
+    						
+    						<!-- Fullscreen Button -->
+    						<button class="gallery-nav-btn" onclick="toggleFullscreen()" style="position: absolute; top: 15px; left: 15px; background: rgba(183, 71, 42, 0.9); color: white; border: none; width: 40px; height: 40px; border-radius: 5px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;"><i class="fa fa-expand"></i></button>
+    					</div>
+    					
+    					<!-- Thumbnail Carousel -->
+    					<div style="background: white; padding: 15px; border-top: 1px solid #e9ecef; overflow-x: auto;">
+    						<div style="display: flex; gap: 10px; min-width: min-content;" id="thumbnailContainer">
+    							<img src="images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg" class="property-thumbnail active-thumb" onclick="selectImage(0)" alt="View 1" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid #b7472a; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/pexels-simay-secgin-1072616580-33647081.jpg" class="property-thumbnail" onclick="selectImage(1)" alt="View 2" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/pexels-thgusstavo-2102587.jpg" class="property-thumbnail" onclick="selectImage(2)" alt="View 3" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/pexels-alex-staudinger-829197-1732414.jpg" class="property-thumbnail" onclick="selectImage(3)" alt="View 4" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg" class="property-thumbnail" onclick="selectImage(4)" alt="View 5" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/front-view-woman-holding-keys-her-new-home.jpg" class="property-thumbnail" onclick="selectImage(5)" alt="View 6" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/kane-taylor-02fRawxKwbA-unsplash.jpg" class="property-thumbnail" onclick="selectImage(6)" alt="View 7" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    							<img src="images/bernard-hermant-g9ydDMdpfM0-unsplash.jpg" class="property-thumbnail" onclick="selectImage(7)" alt="View 8" style="cursor: pointer; width: 80px; height: 80px; object-fit: cover; border: 3px solid transparent; border-radius: 5px; transition: all 0.3s;">
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			
+    			<div class="col-lg-4 property-details ftco-animate">
+    				<span class="property-badge" style="background-color: #b7472a; color: white; padding: 8px 16px; border-radius: 5px; font-weight: 600; display: inline-block; margin-bottom: 15px;">For Sale</span>
+    				<h2>Modern Family House</h2>
+    				<p class="property-location" style="font-size: 16px; color: #666; margin-bottom: 20px;"><i class="fa fa-map-marker" style="color: #b7472a; margin-right: 8px;"></i> Nairobi, Kenya</p>
+    				
+    				<div class="price-tag" style="background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); padding: 20px; border-radius: 8px; margin-bottom: 25px;">
+    					<p style="color: #fff; margin: 0; font-size: 14px;">Price</p>
+    					<h3 style="color: #b7472a; font-size: 36px; font-weight: 700; margin: 5px 0 0 0;">$250,000</h3>
+    				</div>
+    				
+    				<div class="property-features-detail" style="margin-bottom: 25px;">
+    					<h4 style="margin-bottom: 15px; font-size: 18px;">Property Features</h4>
+    					<ul style="list-style: none; padding: 0;">
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-bed" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Bedrooms:</strong> 4</li>
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-bath" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Bathrooms:</strong> 3</li>
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-car" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Parking:</strong> 2 Cars</li>
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-home" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Type:</strong> Residential</li>
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-square" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Area:</strong> 2,500 sq ft</li>
+    						<li style="padding: 10px 0; border-bottom: 1px solid #e9ecef;"><i class="fa fa-calendar" style="color: #b7472a; margin-right: 10px; width: 20px;"></i> <strong>Year Built:</strong> 2022</li>
+    					</ul>
+    				</div>
+    				
+    				<div class="contact-buttons">
+    					<a href="contact.html" class="btn btn-primary btn-block mb-2" style="background-color: #b7472a; border-color: #b7472a; padding: 15px;"><i class="fa fa-envelope mr-2"></i> Contact Agent</a>
+    					<a href="tel:+254733825562" class="btn btn-outline-primary btn-block" style="border-color: #b7472a; color: #b7472a; padding: 15px;"><i class="fa fa-phone mr-2"></i> Call Now</a>
+    				</div>
+    			</div>
+    		</div>
+
+
+
+
+    		
+
+
+
+
+    		<div class="row mt-5">
+          <div class="col-md-12 nav-link-wrap">
+            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link ftco-animate active mr-lg-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Description</a>
+
+              <a class="nav-link ftco-animate mr-lg-1" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Location</a>
+
+              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Amenities</a>
+
+            </div>
+          </div>
+          <div class="col-md-12 tab-wrap">
+            
+            <div class="tab-content bg-light" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+              	<div class="p-4">
+	              	<h3 class="mb-4">Property Description</h3>
+	              	<p>This stunning modern family house is located in one of Nairobi's most desirable neighborhoods. Built in 2022, this property features contemporary architecture combined with excellent craftsmanship and premium finishes throughout. The spacious layout is designed for comfortable living and entertaining, with an emphasis on natural light and open spaces.</p>
+	              	<p>The property is ideal for families seeking a secure, convenient location with excellent access to schools, shopping centers, and business districts. It offers a perfect balance between modern amenities and residential tranquility.</p>
+              	</div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+              	<div class="p-4">
+	              	<h3 class="mb-4">Location & Neighborhood</h3>
+	              	<p>Located in the prime area of Nairobi, this property benefits from excellent connectivity and proximity to essential services. The neighborhood is well-developed with modern infrastructure, reliable utilities, and 24/7 security presence.</p>
+	              	<p><strong>Nearby Amenities:</strong> Quality schools, shopping malls, hospitals, restaurants, and recreational facilities are all within close proximity. The area has seen significant appreciation in property values and continues to be a sought-after residential destination.</p>
+              	</div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+              	<div class="row p-4">
+					   		<div class="col-md-12">
+					   			<h3 class="mb-4">Property Amenities</h3>
+					   			<div class="row">
+					   				<div class="col-md-6">
+					   					<ul style="list-style: none; padding: 0;">
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Air Conditioning</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Fitted Kitchen</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Master En-suite</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Walk-in Closet</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Balcony</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Private Garden</li>
+					   					</ul>
+					   				</div>
+					   				<div class="col-md-6">
+					   					<ul style="list-style: none; padding: 0;">
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> 24/7 Security</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> CCTV Surveillance</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Electric Fence</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Borehole Water</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Backup Generator</li>
+					   						<li style="padding: 8px 0;"><i class="fa fa-check" style="color: #b7472a; margin-right: 10px;"></i> Ample Parking</li>
+					   					</ul>
+					   				</div>
+					   			</div>
+					   		</div>
+					   	</div>
+					   </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <!-- Property Inquiry Section -->
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+    			<div class="col-md-8 text-center">
+    				<h2 class="mb-4">Interested in This Property?</h2>
+    				<p class="lead">Fill out the form below and our agents will contact you shortly with more information.</p>
+    			</div>
+    		</div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-8">
+    				<form id="propertyInquiryForm" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    					<div class="form-row">
+    						<div class="form-group col-md-6">
+    							<label for="name">Full Name *</label>
+    							<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+    						</div>
+    						<div class="form-group col-md-6">
+    							<label for="email">Email Address *</label>
+    							<input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+    						</div>
+    					</div>
+    					<div class="form-row">
+    						<div class="form-group col-md-6">
+    							<label for="phone">Phone Number *</label>
+    							<input type="tel" class="form-control" id="phone" placeholder="+254 7XX XXX XXX" required>
+    						</div>
+    						<div class="form-group col-md-6">
+    							<label for="purpose">Inquiry Type *</label>
+    							<select class="form-control" id="purpose" required>
+    								<option value="">Select Purpose</option>
+    								<option value="purchase">Purchase Inquiry</option>
+    								<option value="rent">Rental Inquiry</option>
+    								<option value="schedule">Schedule Viewing</option>
+    								<option value="finance">Financing Options</option>
+    							</select>
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="message">Message</label>
+    						<textarea class="form-control" id="message" rows="4" placeholder="Tell us more about your interest..."></textarea>
+    					</div>
+    					<button type="submit" class="btn btn-primary btn-block" style="background-color: #b7472a; border-color: #b7472a; padding: 12px; font-weight: 600;">Send Inquiry</button>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Benro <span>RealEstate</span></a></h2>
+              <p>Your trusted partner in property sales, rentals, and investments across Kenya.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">My Accounts</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quick Link</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">Rattansi Educational Trust Building, Koinange Street, P.O Box 1311-00606, Nairobi, Kenya</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+254 733-825562 / +254 722-821554</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">benroinvestments@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+      	<div class="container">
+      		<div class="row">
+	          <div class="col-md-12">
+		
+	            <p class="mb-0" style="color: rgba(255,255,255,.5);">
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Benro RealEstate
+	  </p>
+	          </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+	// Enhanced Image Gallery Script
+	const propertyImages = [
+		'images/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg',
+		'images/pexels-simay-secgin-1072616580-33647081.jpg',
+		'images/pexels-thgusstavo-2102587.jpg',
+		'images/pexels-alex-staudinger-829197-1732414.jpg',
+		'images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg',
+		'images/front-view-woman-holding-keys-her-new-home.jpg',
+		'images/kane-taylor-02fRawxKwbA-unsplash.jpg',
+		'images/bernard-hermant-g9ydDMdpfM0-unsplash.jpg'
+	];
+	
+	let currentImageIndex = 0;
+	
+	// Navigate to next image
+	function nextImage() {
+		currentImageIndex = (currentImageIndex + 1) % propertyImages.length;
+		updateGallery();
+	}
+	
+	// Navigate to previous image
+	function previousImage() {
+		currentImageIndex = (currentImageIndex - 1 + propertyImages.length) % propertyImages.length;
+		updateGallery();
+	}
+	
+	// Select image by index
+	function selectImage(index) {
+		currentImageIndex = index;
+		updateGallery();
+	}
+	
+	// Update gallery display
+	function updateGallery() {
+		// Update main image
+		document.getElementById('mainPropertyImage').src = propertyImages[currentImageIndex];
+		document.getElementById('imageCounter').textContent = currentImageIndex + 1;
+		
+		// Update thumbnail borders
+		document.querySelectorAll('.property-thumbnail').forEach(function(img, index) {
+			if (index === currentImageIndex) {
+				img.style.border = '3px solid #b7472a';
+			} else {
+				img.style.border = '3px solid transparent';
+			}
+		});
+	}
+	
+	// Toggle fullscreen view
+	function toggleFullscreen() {
+		const container = document.getElementById('mainPropertyImageContainer');
+		if (document.fullscreenElement) {
+			document.exitFullscreen();
+		} else {
+			container.requestFullscreen().catch(err => {
+				alert('Fullscreen not available: ' + err.message);
+			});
+		}
+	}
+	
+	// Keyboard navigation
+	document.addEventListener('keydown', function(event) {
+		if (event.key === 'ArrowRight') {
+			nextImage();
+		} else if (event.key === 'ArrowLeft') {
+			previousImage();
+		}
+	});
+	
+	// Initialize gallery and attach button click listeners
+	document.addEventListener('DOMContentLoaded', function() {
+		updateGallery();
+		
+		// Attach click listeners to arrow buttons for reliable detection
+		var prevBtn = document.querySelector('.prev-btn');
+		var nextBtn = document.querySelector('.next-btn');
+		
+		if (prevBtn) {
+			prevBtn.addEventListener('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				previousImage();
+			});
+		}
+		
+		if (nextBtn) {
+			nextBtn.addEventListener('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				nextImage();
+			});
+		}
+	});
+</html>
+
